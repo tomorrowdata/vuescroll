@@ -290,7 +290,7 @@ export default {
   },
   computed: {
     bar() {
-      return scrollMap[this.type];
+      return this.ops.bar.inverted ? scrollMap[`${this.type}_inv`] : scrollMap[this.type];
     },
     barSize() {
       const minSize = this.ops.bar.minSize;

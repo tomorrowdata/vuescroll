@@ -59,7 +59,9 @@ const baseConfig = {
 
     size: '6px',
     /** false or a percent, like 10% */
-    minSize: false
+    minSize: false,
+    /** true to show the bar on the left for vertical */
+    inverted: false,
   },
   scrollButton: {
     enable: false,
